@@ -60,12 +60,17 @@ const VoiceSearch = () => {
       </button>
       <br></br>
       <br></br>
-      <br></br>
-      {query && <p>Your Query: {query}</p>}
+
+      {query && (
+        <p>
+          Your Query: {query} <br></br> <br></br>{" "}
+        </p>
+      )}
       <button onClick={handleSearch} className="btn btn-search">
         Search
       </button>
-
+      <br></br>
+      <br></br>
       <div className="results">
         {results.map((house, index) => (
           <div key={index} className="house-card">
