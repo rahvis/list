@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HouseList from "./components/HouseList";
 import HouseForm from "./components/HouseForm";
+import VoiceSearch from "./components/VoiceSearch";
+
 import "./App.css";
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
+        <VoiceSearch />
         <Routes>
           <Route path="/" element={<HouseList />} />
           <Route path="/add" element={<HouseForm />} />
