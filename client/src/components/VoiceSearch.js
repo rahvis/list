@@ -58,6 +58,9 @@ const VoiceSearch = () => {
       <button onClick={handleVoiceInput} className="btn">
         {isRecording ? "Recording..." : "Click to Speak"}
       </button>
+      <br></br>
+      <br></br>
+      <br></br>
       {query && <p>Your Query: {query}</p>}
       <button onClick={handleSearch} className="btn btn-search">
         Search
