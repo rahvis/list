@@ -71,6 +71,7 @@ const VoiceSearch = () => {
           <div key={index} className="house-card">
             <h3>{house.title}</h3>
             <p>{house.address}</p>
+            <p>Description: ${house.description}</p>
             <p>Price: ${house.price}</p>
             <p>
               {house.bedrooms} bed, {house.bathrooms} bath
