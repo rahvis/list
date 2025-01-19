@@ -13,11 +13,6 @@ function App() {
       <div className="App">
         <Navbar />
         <VoiceSearch />
-        <Routes>
-          <Route path="/" element={<HouseList />} />
-          <Route path="/add" element={<HouseForm />} />
-          <Route path="/edit/:id" element={<HouseForm />} />
-        </Routes>
       </div>
     </Router>
   );
